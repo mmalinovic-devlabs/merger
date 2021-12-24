@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="false"
+id="069e8305-2efe-4185-83c4-e100c1ad273e"
+mode="Global"
+rxversion="9.0">
+	<name>
+		ValidateGroup
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ValidateGroup"
+	namespace="KeePassTestSuite.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="efec13be-47b2-451f-8692-e549f975827a"
+		name="varGroupName">
+			Ranorex
+		</var>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="1fb083ea-c653-4eef-b2f3-895875a407d1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="varGroupName">
+				</binding>
+			</bindings>
+			<info
+			id="040065ca-fe26-471d-9be4-b21ade5331cc"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='MainForm']/container[@controlname='m_splitHorizontal']//tree[@controlname='m_tvGroups']/tree[@accessiblerole='Outline']/?/?/treeitem[@accessiblename=$varcategoryname]
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<explicitdelayitem
+		duration="2000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+	</recorditems>
+	<repository
+	id="550de26a-9cec-4a8c-862c-5b3a773f0132"
+	name="KeePassTestSuiteRepository"
+	relativepath="..\KeePassTestSuiteRepository.rxrep"
+	rxversion="6.0">
+		<codegen
+		classname="KeePassTestSuiteRepository"
+		namespace="KeePassTestSuite">
+		</codegen>
+		<rootfolder
+		id="0e2cdd23-dd72-4d10-b662-4933e627b6fb"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ValidateGroup.UserCode.cs
+	</usercodefile>
+	<references>
+		<reference>
+			Ranorex.Plugin.Qt, Version=5
+		</reference>
+	</references>
+</recordtable>

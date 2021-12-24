@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="false"
+id="342e8ee7-c0da-4bb8-bc84-0dddc067b9e0"
+mode="Global"
+rxversion="9.0">
+	<name>
+		Save
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Save"
+	namespace="KeePassTestSuite.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="5d8a22fc-527d-46c5-9c17-718ccd713210"
+		sx="-1044"
+		sy="291">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0592514a-c2fa-47ea-b955-ab6faad28718"
+			sourcename="Recorder">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="True"
+				index="4"
+				prefcap="button"
+				rect="-1055,275,23,22"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Save
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Press
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Save
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						PushButton
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focused, HotTracked, Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='MainForm']/toolbar/button[@accessiblename='Save']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="af21d78e-6434-4514-a43e-a7e851079267">
+				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
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="550de26a-9cec-4a8c-862c-5b3a773f0132"
+	name="KeePassTestSuiteRepository"
+	relativepath="..\KeePassTestSuiteRepository.rxrep"
+	rxversion="6.0">
+		<codegen
+		classname="KeePassTestSuiteRepository"
+		namespace="KeePassTestSuite">
+		</codegen>
+		<rootfolder
+		id="0e2cdd23-dd72-4d10-b662-4933e627b6fb"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Save.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

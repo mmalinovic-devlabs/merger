@@ -1,0 +1,10 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="KeePassTestSuite.rxtst" />
+  </Array>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="KeePassTestSuite.rxtst" />
+  </Array>
+  <Properties name="projectSavedData" />
+</Properties>

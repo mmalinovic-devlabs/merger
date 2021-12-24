@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# Ranorex Studio 9.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeePassTestSuite", "KeePassTestSuite\KeePassTestSuite.csproj", "{AC2AD819-865C-4A36-9AFC-B17715DBA647}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC2AD819-865C-4A36-9AFC-B17715DBA647}.Debug|x86.Build.0 = Debug|x86
+		{AC2AD819-865C-4A36-9AFC-B17715DBA647}.Debug|x86.ActiveCfg = Debug|x86
+		{AC2AD819-865C-4A36-9AFC-B17715DBA647}.Release|x86.Build.0 = Release|x86
+		{AC2AD819-865C-4A36-9AFC-B17715DBA647}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+EndGlobal
