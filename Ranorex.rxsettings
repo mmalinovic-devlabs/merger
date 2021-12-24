@@ -1,5 +1,5 @@
 ﻿<configuration
-rxversion="9.0">
+rxversion="10.1">
 	<adapter.defaultsearchtimeout>
 		10000ms
 	</adapter.defaultsearchtimeout>
@@ -15,9 +15,15 @@ rxversion="9.0">
 	<imaging.usehiddenimagecapture>
 		True
 	</imaging.usehiddenimagecapture>
+	<validate.defaultoptions>
+		True;Failure;Success;Never;Never;Never;OnFail;3000ms
+	</validate.defaultoptions>
 	<input.enableimehookkey>
 		False
 	</input.enableimehookkey>
+	<keyboard.presssequencepredelay>
+		150ms
+	</keyboard.presssequencepredelay>
 	<pointer.checkisvalidlocation>
 		True
 	</pointer.checkisvalidlocation>
@@ -48,6 +54,9 @@ rxversion="9.0">
 	<recorder.keysequencesplittime>
 		1000ms
 	</recorder.keysequencesplittime>
+	<report.ShowInvisibleCharactersKey>
+		True
+	</report.ShowInvisibleCharactersKey>
 	<repository.appfoldertimeout>
 		30000ms
 	</repository.appfoldertimeout>
@@ -60,6 +69,9 @@ rxversion="9.0">
 	<repository.useappfoldercache>
 		True
 	</repository.useappfoldercache>
+	<repository.variablestoredaction>
+		None
+	</repository.variablestoredaction>
 	<repository.autogeneratefolders>
 		True
 	</repository.autogeneratefolders>
@@ -396,6 +408,9 @@ rxversion="9.0">
 	<TestCase.Retry.ShowWarning>
 		True
 	</TestCase.Retry.ShowWarning>
+	<TestCase.Autobind.Action>
+		AskUser
+	</TestCase.Autobind.Action>
 	<Testing.Data.ExcelDataLoadingPreference>
 		PreferExcel
 	</Testing.Data.ExcelDataLoadingPreference>
@@ -417,6 +432,21 @@ rxversion="9.0">
 	<mouse.interpolation.mode>
 		Optimized
 	</mouse.interpolation.mode>
+	<mouse.disableonaction>
+		True
+	</mouse.disableonaction>
+	<keyboard.sequence.focusretries>
+		5
+	</keyboard.sequence.focusretries>
+	<keyboard.sequence.focusinterval>
+		20
+	</keyboard.sequence.focusinterval>
+	<recorder.focusresolving.Enabled>
+		True
+	</recorder.focusresolving.Enabled>
+	<recorder.focusresolving.TopLevelFallbackEnabled>
+		True
+	</recorder.focusresolving.TopLevelFallbackEnabled>
 	<plugins.win32.EnableBasicDelphiSupport>
 		True
 	</plugins.win32.EnableBasicDelphiSupport>
@@ -504,6 +534,26 @@ rxversion="9.0">
 	</plugins.wpfnative.tree.skipanddescend>
 	<plugins.wpfnative.flags>
 	</plugins.wpfnative.flags>
+	<plugins.wpfcore.enablewpfdebug>
+		False
+	</plugins.wpfcore.enablewpfdebug>
+	<plugins.wpfcore.enablewpfcore>
+		True
+	</plugins.wpfcore.enablewpfcore>
+	<plugins.wpfcore.proc.ignorelist>
+	</plugins.wpfcore.proc.ignorelist>
+	<plugins.wpfcore.item.filter.attributes.prefixlist>
+		AreAnyTouches;IsKeyboard;IsMouse;IsStylus;IsFocused;IsVisible;IsEnabled;Ranorex;
+	</plugins.wpfcore.item.filter.attributes.prefixlist>
+	<plugins.wpfcore.attributes.allow>
+		System.Windows.Controls.TextBox|SelectionStart;System.Windows.Controls.TextBox|SelectionLength;
+	</plugins.wpfcore.attributes.allow>
+	<plugins.wpfcore.tree.showall>
+		False
+	</plugins.wpfcore.tree.showall>
+	<plugins.wpfcore.tree.realizedvirtualizeditems>
+		False
+	</plugins.wpfcore.tree.realizedvirtualizeditems>
 	<plugins.wpf.ExpensiveAttributesEnabled>
 		True
 	</plugins.wpf.ExpensiveAttributesEnabled>
@@ -522,6 +572,21 @@ rxversion="9.0">
 	<plugins.wpf.EnableWinAppFrameFiltering>
 		True
 	</plugins.wpf.EnableWinAppFrameFiltering>
+	<plugins.uia.SubscribeToFocusChangedEvent>
+		False
+	</plugins.uia.SubscribeToFocusChangedEvent>
+	<plugins.web.chrome.ForceAccessibleRenderer>
+		True
+	</plugins.web.chrome.ForceAccessibleRenderer>
+	<plugin.rawtext.captureansi>
+		True
+	</plugin.rawtext.captureansi>
+	<plugin.rawtext.capturegdiplus>
+		False
+	</plugin.rawtext.capturegdiplus>
+	<plugin.rawtext.includetextinrectcomparison>
+		False
+	</plugin.rawtext.includetextinrectcomparison>
 	<plugins.java.classnames>
 	</plugins.java.classnames>
 	<plugins.java.swtlegacymode>
@@ -542,6 +607,10 @@ rxversion="9.0">
 	<plugins.qt.quickfiltered>
 		True
 	</plugins.qt.quickfiltered>
+	<plugin.mobile.android.instrumentation>
+	</plugin.mobile.android.instrumentation>
+	<plugin.mobile.ios.instrumentation>
+	</plugin.mobile.ios.instrumentation>
 	<plugin.mobile.android.ConnectTimout>
 		10000ms
 	</plugin.mobile.android.ConnectTimout>
@@ -569,12 +638,17 @@ rxversion="9.0">
 	<plugin.mobile.android.UseAndroidOS>
 		False
 	</plugin.mobile.android.UseAndroidOS>
+	<plugin.mobile.android.ForceAndroidOS>
+		False
+	</plugin.mobile.android.ForceAndroidOS>
 	<plugin.mobile.android.FetchAndroidOSScreenshots>
 		True
 	</plugin.mobile.android.FetchAndroidOSScreenshots>
 	<plugin.cef.processblacklist>
 		spotify;chrome;
 	</plugin.cef.processblacklist>
+	<plugin.cef.domblacklist>
+	</plugin.cef.domblacklist>
 	<plugin.cef.forcehwndrectangle>
 		False
 	</plugin.cef.forcehwndrectangle>

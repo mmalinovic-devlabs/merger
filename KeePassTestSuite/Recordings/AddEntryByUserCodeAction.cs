@@ -96,16 +96,6 @@ namespace KeePassTestSuite.Recordings
         }
 
         /// <summary>
-        /// Gets or sets the value of variable varTitle.
-        /// </summary>
-        [TestVariable("784c5427-5da9-4308-b359-2e6b8124c417")]
-        public string varTitle
-        {
-            get { return repo.varTitle; }
-            set { repo.varTitle = value; }
-        }
-
-        /// <summary>
         /// Gets or sets the value of variable varIconIndex.
         /// </summary>
         [TestVariable("b832d535-1f07-4b07-81c7-858db28af322")]
@@ -123,6 +113,16 @@ namespace KeePassTestSuite.Recordings
         {
             get { return repo.varExpires; }
             set { repo.varExpires = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable varTitle.
+        /// </summary>
+        [TestVariable("784c5427-5da9-4308-b359-2e6b8124c417")]
+        public string varTitle
+        {
+            get { return repo.varTitle; }
+            set { repo.varTitle = value; }
         }
 
 #endregion

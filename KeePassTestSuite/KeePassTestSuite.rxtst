@@ -315,6 +315,64 @@ connector in three different ways:]]>
 			name="KeePassTestSuite"
 			reportlevel="Info;20">
 			</testcase>
+			<testmodule
+			id="b01a1b9b-f5cd-40e2-bd43-2d9530cdfd7a"
+			name="DeleteEntry"
+			ref="8a03480a-c326-4e0f-8a34-f6067f989e70"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="csv_Title"
+					datasourceid="ce2f677c-0370-414a-a657-3da3a87820e6"
+					variableid="64154ab2-5fe8-42d9-8fd7-c58f64ade382"
+					variablename="varTitle">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="b576f606-596f-40c1-a60a-3391b4882705"
+			name="AddEntry"
+			ref="77a1ee00-9c62-4065-a279-c558e56551b4"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="csv_Title"
+					datasourceid="ce2f677c-0370-414a-a657-3da3a87820e6"
+					variableid="089ec43a-e859-4dd5-8fd9-1eece839e112"
+					variablename="varTitle">
+					</var>
+					<var
+					dataname="csv_Username"
+					datasourceid="ce2f677c-0370-414a-a657-3da3a87820e6"
+					variableid="856e3a95-1f86-49b9-b039-0bbf61df43a8"
+					variablename="varUsername">
+					</var>
+					<var
+					dataname="csv_Password"
+					datasourceid="ce2f677c-0370-414a-a657-3da3a87820e6"
+					variableid="0ba1ab66-b1ca-4815-b1d1-a6979a9fdc10"
+					variablename="varPassword">
+					</var>
+					<var
+					dataname="csv_URL"
+					datasourceid="ce2f677c-0370-414a-a657-3da3a87820e6"
+					variableid="883af02e-b9cf-4ecd-83ed-3c5617fb8866"
+					variablename="varURL">
+					</var>
+					<var
+					dataname="csv_Icon"
+					datasourceid="ce2f677c-0370-414a-a657-3da3a87820e6"
+					variableid="c48df24c-030a-4a73-997a-4632b57b8423"
+					variablename="varIconIndex">
+					</var>
+					<var
+					dataname="csv_Expires"
+					datasourceid="ce2f677c-0370-414a-a657-3da3a87820e6"
+					variableid="7230104a-3274-4758-9034-592ec4e96356"
+					variablename="varExpires">
+					</var>
+				</databinding>
+			</testmodule>
 			<modulegroup
 			id="bd1ed8a4-be18-4dd9-861a-783f8402b745"
 			name="StartAndLogin"
@@ -333,6 +391,20 @@ connector in three different ways:]]>
 			name="Save"
 			ref="342e8ee7-c0da-4bb8-bc84-0dddc067b9e0"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="e350fd47-8d22-4fe8-b4fc-71275566bcd7"
+			name="ValidateEntry"
+			ref="22e7bc49-a08f-4ed4-9426-9dbb96022fbf"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="csv_Title"
+					datasourceid="ce2f677c-0370-414a-a657-3da3a87820e6"
+					variableid="353a400f-94b6-4cef-9c83-b7fb02237d16"
+					variablename="varTitle">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="e871bdf5-c9ec-4370-a01f-fbee60508a3b"
@@ -367,6 +439,14 @@ connector in three different ways:]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			datasource="CsvConnector_Credentials"
+			id="f9fde7a3-fa2b-4c9a-93be-4c5e3ba299aa"
+			name="AddEntryByRecording">
+				<description>
+					<![CDATA[... using the recording module "AddEntry"]]>
+				</description>
+			</testcase>
 			<testmodule
 			id="fd1de731-18ce-4ff4-a624-accd706fade6"
 			name="AddCredentialEntry"
@@ -475,6 +555,22 @@ connector in three different ways:]]>
 							</testmodule>
 							<testmodule
 							id="36dbe530-c4bf-4534-93e9-9f2fa56d740f"
+							name="DeleteEntry">
+							</testmodule>
+						</testcase>
+						<testcase
+						id="f9fde7a3-fa2b-4c9a-93be-4c5e3ba299aa"
+						name="AddEntryByRecording">
+							<testmodule
+							id="b576f606-596f-40c1-a60a-3391b4882705"
+							name="AddEntry">
+							</testmodule>
+							<testmodule
+							id="e350fd47-8d22-4fe8-b4fc-71275566bcd7"
+							name="ValidateEntry">
+							</testmodule>
+							<testmodule
+							id="b01a1b9b-f5cd-40e2-bd43-2d9530cdfd7a"
 							name="DeleteEntry">
 							</testmodule>
 						</testcase>
@@ -618,6 +714,9 @@ connector in three different ways:]]>
 			</testcontainer>
 			<testcontainer
 			id="a5ad1462-25ba-4567-9b4a-cee0ad7c900e">
+			</testcontainer>
+			<testcontainer
+			id="f9fde7a3-fa2b-4c9a-93be-4c5e3ba299aa">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
