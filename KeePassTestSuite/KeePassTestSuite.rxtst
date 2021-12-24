@@ -36,10 +36,6 @@ rxversion="9.0">
 					</var>
 				</databinding>
 			</testmodule>
-			<teardown
-			id="22f20a6b-db73-44e2-b71d-7334c3f469f3"
-			name="teardown">
-			</teardown>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -71,15 +67,6 @@ rxversion="9.0">
 				<description>
 					<![CDATA[... using the&nbsp;recorder module 
 "AddEntryByUserCodeAction"]]>
-				</description>
-			</testcase>
-			<testcase
-			datasource="Connector_GroupName"
-			id="35919cb4-ff0a-47d5-8755-346f31078869"
-			name="AddNewGroup">
-				<description>
-					<![CDATA[Test Case: Add new&nbsp;group to KeePass, validate and 
-delete it.]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -175,10 +162,6 @@ delete it.]]>
 					<![CDATA[... using the recording module "AddEntry"]]>
 				</description>
 			</testcase>
-			<setup
-			id="625bac5d-db90-4776-a6f4-637b5002a840"
-			name="setup">
-			</setup>
 			<testmodule
 			id="6794cc06-3296-4e21-b11d-9ff2b1fd1245"
 			name="AddEntryByUserCodeAction"
@@ -237,20 +220,6 @@ delete it.]]>
 			id="72a49af0-82c9-4ea2-ae23-bce830bcd790"
 			name="setup">
 			</setup>
-			<testmodule
-			id="7695a61c-fcb5-475e-9b1c-e1eb8d1f5ecc"
-			name="ValidateGroup"
-			ref="069e8305-2efe-4185-83c4-e100c1ad273e"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="GroupName"
-					datasourceid="90066ff8-70ea-46ca-8c82-f498e56e4d3a"
-					variableid="efec13be-47b2-451f-8692-e549f975827a"
-					variablename="varGroupName">
-					</var>
-				</databinding>
-			</testmodule>
 			<smartfoldernode
 			id="7be436af-5f3e-4944-97fa-2669c6b0c726"
 			name="AddNewEntry">
@@ -259,20 +228,6 @@ delete it.]]>
 connector in three different ways:]]>
 				</description>
 			</smartfoldernode>
-			<testmodule
-			id="8089cba9-64a9-4ed3-b850-6b12192a3d19"
-			name="AddGroup"
-			ref="ded9e53d-8c7a-4608-8dbe-52e858bbad39"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="GroupName"
-					datasourceid="90066ff8-70ea-46ca-8c82-f498e56e4d3a"
-					variableid="4c3f43ba-f0e0-46f9-9352-67739fe4fa3f"
-					variablename="varGroupName">
-					</var>
-				</databinding>
-			</testmodule>
 			<testmodule
 			id="8415d080-780a-4869-8306-7c133d14eb6c"
 			name="ValidateEntry"
@@ -297,19 +252,6 @@ connector in three different ways:]]>
 			id="966d6f4d-3dd8-4075-b95f-acd056e23105"
 			name="teardown">
 			</teardown>
-			<modulegroup
-			id="a140f37e-0517-4d49-97df-e987d1c03539"
-			name="StartAndLogin"
-			ref="06034367-fafa-4251-8bc4-e13a3b6c091a">
-				<missingdatabinding>
-					<var
-					dataname="GlobalExecutionPath"
-					datasourceid="a5ad1462-25ba-4567-9b4a-cee0ad7c900e"
-					variableid="cdc59aa8-210b-41ff-ad83-86e092e42176"
-					variablename="ModuleGroupGlobalExecutionPath">
-					</var>
-				</missingdatabinding>
-			</modulegroup>
 			<testcase
 			id="a5ad1462-25ba-4567-9b4a-cee0ad7c900e"
 			name="KeePassTestSuite"
@@ -334,25 +276,6 @@ connector in three different ways:]]>
 			ref="342e8ee7-c0da-4bb8-bc84-0dddc067b9e0"
 			type="Recording">
 			</testmodule>
-			<testmodule
-			id="e871bdf5-c9ec-4370-a01f-fbee60508a3b"
-			name="DeleteGroup"
-			ref="6b502c5c-26e5-46bd-813b-9a4f90f0684d"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="GroupName"
-					datasourceid="90066ff8-70ea-46ca-8c82-f498e56e4d3a"
-					variableid="93799613-85ba-4c22-aeb8-f96238c3abf7"
-					variablename="varGroupName">
-					</var>
-				</databinding>
-			</testmodule>
-			<modulegroup
-			id="ea2d75ee-04f0-4020-8d10-d01f79817d24"
-			name="SaveAndClose"
-			ref="8a2c779f-8e28-4633-8a8b-37d39161f546">
-			</modulegroup>
 			<testmodule
 			id="f917d91a-6739-47ba-9909-d50dc1fff178"
 			name="DeleteEntry"
@@ -491,38 +414,6 @@ connector in three different ways:]]>
 							</testmodule>
 						</teardown>
 					</smartfoldernode>
-					<testcase
-					id="35919cb4-ff0a-47d5-8755-346f31078869"
-					name="AddNewGroup">
-						<setup
-						id="625bac5d-db90-4776-a6f4-637b5002a840"
-						name="setup">
-							<modulegroup
-							id="a140f37e-0517-4d49-97df-e987d1c03539"
-							name="StartAndLogin">
-							</modulegroup>
-						</setup>
-						<testmodule
-						id="8089cba9-64a9-4ed3-b850-6b12192a3d19"
-						name="AddGroup">
-						</testmodule>
-						<testmodule
-						id="7695a61c-fcb5-475e-9b1c-e1eb8d1f5ecc"
-						name="ValidateGroup">
-						</testmodule>
-						<testmodule
-						id="e871bdf5-c9ec-4370-a01f-fbee60508a3b"
-						name="DeleteGroup">
-						</testmodule>
-						<teardown
-						id="22f20a6b-db73-44e2-b71d-7334c3f469f3"
-						name="teardown">
-							<modulegroup
-							id="ea2d75ee-04f0-4020-8d10-d01f79817d24"
-							name="SaveAndClose">
-							</modulegroup>
-						</teardown>
-					</testcase>
 					<teardown
 					id="6c5abfda-838a-4c38-becd-f52f61befd73"
 					name="teardown">
@@ -608,9 +499,6 @@ connector in three different ways:]]>
 		<testconfiguration
 		name="MyFirstRunConfig">
 			<testcontainer
-			id="35919cb4-ff0a-47d5-8755-346f31078869">
-			</testcontainer>
-			<testcontainer
 			id="5c7e2c5b-46df-4c65-b66b-b3f69b489a23">
 			</testcontainer>
 			<testcontainer
@@ -624,9 +512,6 @@ connector in three different ways:]]>
 		name="RunAll">
 			<testcontainer
 			id="32e63182-c4d3-4974-9bf8-d8b04f54c8d3">
-			</testcontainer>
-			<testcontainer
-			id="35919cb4-ff0a-47d5-8755-346f31078869">
 			</testcontainer>
 			<testcontainer
 			id="5c7e2c5b-46df-4c65-b66b-b3f69b489a23">
